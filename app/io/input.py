@@ -21,6 +21,9 @@ def read_data_from_file(path):
 
     Returns:
         str: data from the file.
+
+    Raises:
+        FileNotFoundError: if file does not exist.
     """
     with open(path, "r") as f:
         text = f.read()
